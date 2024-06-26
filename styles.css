@@ -1,0 +1,119 @@
+/* Cursor*/
+ * {
+    cursor: url(https://cur.cursors-4u.net/food/foo-7/foo606.cur), auto !important;
+}
+
+
+/* General Styles */
+body {
+    font-family: 'Noto Sans JP', sans-serif; /* A font that supports Japanese characters */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #2c3e50;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background: #2e8b57; /* Dark green */
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #32cd32 3px solid; /* Lighter green */
+}
+
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: 'Noto Serif JP', serif; /* Japanese serif font */
+}
+
+/* Navigation Styles */
+nav {
+    margin-top: 10px;
+    background: #2e8b57; /* Dark green */
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background: #32cd32; /* Lighter green */
+}
+
+/* Main Content Styles */
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.content {
+    flex: 3;
+}
+
+.sidebar {
+    flex: 1;
+    background: #e0f7fa; /* Light cyan */
+    padding: 15px;
+    margin-left: 20px;
+    border-left: 5px solid #2e8b57; /* Dark green border */
+}
+
+.sidebar h2 {
+    font-family: 'Noto Serif JP', serif; /* Japanese serif font */
+}
+
+.sidebar img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background: #2e8b57; /* Dark green */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    clear: both;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        margin: 20px 0;
+    }
+}
