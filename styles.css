@@ -117,3 +117,8 @@ footer {
         margin: 20px 0;
     }
 }
+
+video {
+    width: 100%;
+    height: auto;
+  }
